@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family:Times New Roman;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            .header{
+                height: 140px;
+                background-image: linear-gradient(to top,#1f1f2e, #0d0d0d); 
+                display: flex;
+                justify-content: space-between;
+            }
+            .invent{
+                display: flex;
+            }
+           
+            .leftside{
+                /*border: 1px solid white;*/
+                width: 400px;
+            }
+            .personal{
+                font-weight:600;
+                text-align: center;
+                color:cornflowerblue;
+                padding-top: 20px;
+                font-size: 40px;
+            }
+            .inven{
+                margin-top: -11px;
+                font-weight:600;
+                color: white;
+                font-size: 40px;
+                padding-left: 70px;
+            }
+            .system{
+                margin-top: -11px;
+                font-weight:600;
+                color: grey;
+                font-size: 40px;
+                text-align: center;
+            }
+            .rightside{
+                margin-left: 450px;
+                /*border: solid;*/
+                color:white;
+                display: flex;
+                padding-bottom:30px;
+                font-weight: 700;
+                justify-content: space-between;
+                width: 400px;
+                align-items: center;
+                font-size: 20px;
+            }
+            .home{
+
+                padding-left: 50px;
+            }
+            .login{
+                padding-right: 40px;
+            }
+            .table{
+                /*border: solid;*/
+                border-radius:   0px 0px 15px 15px;
+                background-color: #00134d;
+                padding-bottom: 40px;
+                padding-top: 40px;
+                margin-left: 250px;
+                padding-left:260px;
+                padding-right:180px;
+                color: white;
+                width: 800px;
+                height: 230px;
+            }
+
+            .userprofile{
+                margin-top: 40px;
+                padding-top: 30px;
+                padding-left: 30px;
+                font-size: 28px;
+                font-weight: 700;
+                margin-left: 250px;
+                /*border: solid;*/
+                display: flex;
+                width: 770px;
+                border-radius:  15px 15px 0px 0px;
+                background-color: #00134d;
+            }        
+
+            .exp{
+                margin-top: 20px;
+            }
+            .update,a{
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body style="background-color: #0099ff">
+        <div class="header" >
+            <div class="leftside">
+                <div class="personal">Personal </div>
+                <div class="invent">
+                    <div class="inven">Inventory</div>
+                    <div class="system">System</div>
+                </div>
+            </div>
+           <div class="rightside">
+                 <div class="home"><a href="Home.html"> Home</a></div>
+                <div class="register"><a href="Registration.html"> Register User</a></div>
+                <div class="login"><a href="Login.jsp"> Login</div>
+            </div>
+        </div>
+
+        <form >
+          <div class="tableouter">
+
+                <table  border="0" cellspacing='0' class="table"  >
+                    <div class="userprofile">
+                        <div style="font-family:Algerian; color:aliceblue;">
+                            User
+                        </div>
+                        <div style="margin-left:10px; font-family:Algerian; color:grey;">
+                            Registration
+                        </div>
+
+                    </div>
+
+                    <tr>
+                        <td>Name:</td>
+                        <td> <input type="text" name="name"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Username:</td>
+                        <td> <input type="text" name="username"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Password:</td>
+                        <td> <input type="password" name="password" id="password"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Confirm Password: </td>
+                        <td> <input type="password" name="confirm password" id="confirm_password"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone No:</td>
+                        <td> <input type="text" name="mobile"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email Id:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Address :</td>
+                        <td> <input type="text" name="add"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td ><input type="submit" value="Register"> <button style="margin-left: 100px;">Clear</button></td>
+                    </tr>
+
+                </table>
+            </div>
+        </form>
+
+    </body>
+</html>
